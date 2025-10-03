@@ -2,19 +2,16 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(270deg, #ffcccc, #ccffcc);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    background: linear-gradient(270deg, #ffcccc, #ccffcc, #ffff99);
+    background-size: 600% 600%;
+    animation: gradientBG 20s ease infinite;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    color: #3333cc;
+h1, h2 {
     animation: fadeIn 2s ease-in;
-}
-
-h2 {
-    color: #cc3333;
-    animation: fadeIn 3s ease-in;
+    margin-top: 20px;
 }
 
 ul {
@@ -29,6 +26,17 @@ li {
 
 .animated {
     animation: bounce 2s infinite;
+}
+
+a {
+    text-decoration: none;
+    color: #3333cc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #cc3333;
 }
 
 /* Background gradient animation */
@@ -48,4 +56,19 @@ li {
 @keyframes bounce {
     0%, 100% {transform: translateY(0);}
     50% {transform: translateY(-10px);}
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
